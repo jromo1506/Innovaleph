@@ -1,0 +1,62 @@
+.slider-halfscreen
+	max-height: 100vh
+	height: 100%
+	overflow: hidden
+	padding-top: 150px
+	padding-bottom: 160px
+.slider-halfscreen_fullheight
+	padding-top: 0
+	padding-bottom: 0
+	padding-right: 0
+	padding-left: 0
+.slider-halfscreen__header
+	p
+		max-width: 600px
+.slider-halfscreen__wrapper-button
+	@include fluid-margin-top($min_width, $max_width, 30, 50)
+.slider-halfscreen__arrows_centered
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	left: 0
+	right: 0
+	z-index: 50
+.slider-halfscreen__content_padding
+	padding: 120px
+
+
+@media screen and (max-width: $xxl)
+	.slider-halfscreen:not(.slider-halfscreen_fullheight)
+		padding-top: 120px
+		padding-bottom: 130px
+	.slider-halfscreen__content_padding
+		padding: 80px
+
+@media screen and (max-width: $xl)
+	.slider-halfscreen:not(.slider-halfscreen_fullheight)
+		padding-top: 100px
+		padding-bottom: 110px
+	.slider-halfscreen__content_padding
+		padding: 60px
+		
+@media screen and (max-height: 800px) and (min-width: $md)
+	.slider-halfscreen:not(.slider-halfscreen_fullheight)
+		padding-top: 100px
+		padding-bottom: 110px
+
+@media screen and (max-width: $md)
+	.slider-halfscreen, .slider-halfscreen:not(.slider-halfscreen_fullheight)
+		@include fluid-padding-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+		padding-bottom: 20px
+		padding-left: 0
+		padding-right: 0
+		max-height: unset
+		height: auto !important
+	.slider-halfscreen__images
+		height: 33vh !important
+	.slider-halfscreen__content
+		margin-bottom: 40px
+		@include fluid-margin-bottom($min_width, $md, 40, 50)
+		padding: 0 20px
+	.slider__footer_half
+		width: 100%

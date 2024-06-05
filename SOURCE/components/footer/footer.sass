@@ -1,0 +1,20 @@
+.footer
+	position: relative
+.footer__area-primary
+	@include fluid-padding-top($min_width, $max_width, 30, 100)
+	@include fluid-padding-bottom($min_width, $max_width, 30, 100)
+.footer__area-secondary
+	padding-top: 30px
+	padding-bottom: 30px
+	border-top: 1px solid $borders-dark
+
+
+@media screen and (max-width: $md)
+	.footer__area-secondary
+		padding-top: 15px
+		padding-bottom: 15px
+	.footer__column
+		padding-top: 10px
+		padding-bottom: 10px
+		&.text-left, &.text-center, &.text-right
+			text-align: center !important

@@ -1,0 +1,68 @@
+.figure-member
+	text-align: center
+.figure-member_has-social
+	&:hover
+		.figure-member__curtain
+			transform: skewY(-5deg) translateY(0%)
+		.figure-member__wrapper-img img
+			transform: translateY(-20px)
+		.figure-member__social
+			li
+				transform: translateY(0px)
+				opacity: 1
+				visibility: visible
+				@for $i from 1 through 10
+					&:nth-child(#{$i})
+						transition-delay: 50ms + $i * 30ms
+		.figure-member__content
+			transform: translate(0, -25%)
+		.figure-member__line
+			transform: scaleY(0)
+.figure-member__position
+	+small-caps
+	color: $pinkish-grey
+.figure-member__wrapper-img
+	position: relative
+	img
+		+trans1
+		width: 100%
+.figure-member__wrapper-img-inner
+	position: relative
+	overflow: hidden
+.figure-member__line
+	position: absolute
+	left: 0
+	right: 0
+	bottom: -30px
+	margin: 0 auto
+	height: 60px
+	width: 1px
+	background-color: $sandstone
+	+trans1
+	transform-origin: top center
+.figure-member__heading
+	margin-top: 50px
+	margin-bottom: 0
+.figure-member__position
+	margin-top: 12px
+.figure-member__curtain
+	position: absolute
+	left: -20px
+	right: -20px
+	bottom: -20px
+	transform: skewY(-5deg) translateY(100%)
+	+trans1
+	padding: 60px 30px 60px
+.figure-member__social
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 0 20px 30px
+	li
+		transform: translateY(30px)
+		+trans1
+		opacity: 0
+		visibility: hidden
+.figure-member__content
+	+trans1

@@ -1,0 +1,42 @@
+.section-about__header
+	position: relative
+	margin-left: -100px
+	@include fluid-margin-bottom($min_width, $max_width, 30, 50)
+.section-about__content
+	@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+	max-width: 550px
+	z-index: 50
+.section-about__heading
+	margin-top: 0
+	margin-bottom: 0
+.section-about__headline
+	margin-top: 0
+	@include fluid-margin-bottom($min_width, $max_width, 30, 60)
+.section-about__decor
+	position: absolute
+	top: -200px
+	right: -100px
+	z-index: -1
+.section-about__wrapper-counter
+	@include fluid-padding-top($min_width, $max_width, 25, 50)
+	@include fluid-padding-bottom($min_width, $max_width, 25, 50)
+.section-about__wrapper-content
+	padding-left: 80px
+	padding-right: 80px
+	> *:last-child
+		margin-bottom: 0
+
+@media screen and (max-width: $md)
+	.section-about__content
+		margin-top: 0
+		max-width: 100%
+	.section-about__header
+		margin-left: auto
+		margin-right: auto
+		padding-left: 20px
+		padding-right: 20px
+	.section-about__wrapper-content
+		padding-left: 20px
+		padding-right: 20px
+	.section-about__wrapper-img
+		@include fluid-margin-top($min_width, $max_width, 40, 80)

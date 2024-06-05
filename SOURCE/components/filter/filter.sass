@@ -1,0 +1,29 @@
+.filter
+	position: relative
+	padding-top: 45px
+	padding-bottom: 45px
+	text-align: center
+.filter__inner
+	position: relative
+.filter__item
+	+small-caps
+	padding-top: 5px
+	padding-bottom: 5px
+	cursor: pointer
+	+trans1
+	&:not(.filter__item_active):hover
+		color: $greyish-brown
+.filter__item_active
+	color: $sandstone
+.filter__underline
+	display: block
+	position: absolute
+	bottom: 0
+	left: 0
+	background-color: $sandstone
+	width: 0
+	height: 1px
+
+@media screen and (max-width: $xl)
+	.filter__underline
+		display: none

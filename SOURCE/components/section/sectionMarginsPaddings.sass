@@ -1,0 +1,139 @@
+.section-offset_bottom
+	z-index: 60
+.section_pt-small
+	&.section-offset_bottom
+		padding-top: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mb-small
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mb
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mb-large
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pt
+	&.section-offset_bottom
+		padding-top: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mb-small
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mb
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mb-large
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pt-large
+	&.section-offset_bottom
+		padding-top: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-normal, $distance-max-large)
+		&.section_mb-small
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mb
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mb-large
+			@include fluid-margin-bottom($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pb-small
+	&.section-offset_top
+		padding-bottom: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-small, $distance-max-small, -1)
+		&.section_mt-small
+			@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mt
+			@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mt-large
+			@include fluid-margin-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pb
+	&.section-offset_top
+		padding-bottom: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-normal, $distance-max-normal, -1)
+		&.section_mt-small
+			@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mt
+			@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mt-large
+			@include fluid-margin-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pb-large
+	&.section-offset_top
+		padding-bottom: 0
+		.section-offset__content
+			@include fluid-translate-y($min_width, $max_width, $distance-min-large, $distance-max-large, -1)
+		&.section_mt-small
+			@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+		&.section_mt
+			@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+		&.section_mt-large
+			@include fluid-margin-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+
+.section_pt-xsmall
+	@include fluid-padding-top($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall)
+.section_pt-small
+	@include fluid-padding-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+.section_pt
+	@include fluid-padding-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+.section_pt-large
+	@include fluid-padding-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+.section_pt-xlarge
+	@include fluid-padding-top($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge)
+
+.section_pb-xsmall
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall)
+.section_pb-small
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+.section_pb
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+.section_pb-large
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-large, $distance-max-large)
+.section_pb-xlarge
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge)
+
+.section_mt-xsmall
+	@include fluid-margin-top($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall)
+.section_mt-small
+	@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+.section_mt
+	@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+.section_mt-large
+	@include fluid-margin-top($min_width, $max_width, $distance-min-large, $distance-max-large)
+.section_mt-xlarge
+	@include fluid-margin-top($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge)
+
+.section_mb-xsmall
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall)
+.section_mb-small
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+.section_mb
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal)
+.section_mb-large
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-large, $distance-max-large)
+.section_mb-xlarge
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge)
+
+.section_minus-mt-xsmall
+	@include fluid-margin-top($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall, -1)
+.section_minus-mt-small
+	@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small, -1)
+.section_minus-mt
+	@include fluid-margin-top($min_width, $max_width, $distance-min-normal, $distance-max-normal, -1)
+.section_minus-mt-large
+	@include fluid-margin-top($min_width, $max_width, $distance-min-large, $distance-max-large, -1)
+.section_minus-mt-xlarge
+	@include fluid-margin-top($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge, -1)
+
+.section_minus-mb-xsmall
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-xsmall, $distance-max-xsmall, -1)
+.section_minus-mb-small
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-small, $distance-max-small, -1)
+.section_minus-mb
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-normal, $distance-max-normal, -1)
+.section_minus-mb-large
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-large, $distance-max-large, -1)
+.section_minus-mb-xlarge
+	@include fluid-margin-bottom($min_width, $max_width, $distance-min-xlarge, $distance-max-xlarge, -1)

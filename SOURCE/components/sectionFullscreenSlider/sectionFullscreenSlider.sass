@@ -1,0 +1,15 @@
+.section-fullscreen-slider.color-white
+	.slider__dot
+		&:before
+			background-color: $brown-grey
+		&:after
+			border-color: $white
+	.slider__dot_active
+		&:before
+			background-color: $white
+			border-color: $white
+
+.section-fullscreen-slider__inner
+	padding-top: 0
+	padding-bottom: 0
+	min-height: calc(var(--fix-bar-vh, 1vh) * 100)

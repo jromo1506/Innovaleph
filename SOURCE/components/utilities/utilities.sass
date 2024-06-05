@@ -1,0 +1,87 @@
+.text-left
+	text-align: left !important
+	.section__headline
+		margin-right: auto
+.text-center
+	text-align: center !important
+	.section__headline
+		margin-left: auto
+		margin-right: auto
+.text-right
+	text-align: right !important
+	.section__headline
+		margin-left: auto
+.row-80
+	margin-left: -40px
+	margin-right: -40px
+.overflow
+	position: relative
+	overflow: hidden
+.overflow__curtain
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: 50
+.overflow__content
+	width: 100%
+	height: 100%
+.position-relative
+	position: relative
+.position-fixed
+	position: fixed
+.of-cover
+	width: 100%
+	height: 100%
+	object-fit: cover
+	font-family: 'object-fit: cover;'
+.of-contain
+	width: 100%
+	height: 100%
+	object-fit: contain
+	font-family: 'object-fit: contain;'
+.split-line
+	overflow: hidden
+.hidden
+	opacity: 0
+	visibility: hidden
+.no-gutters
+	padding-left: 0
+	padding-right: 0
+.grayscale
+	filter: grayscale(70%)
+.h-100
+	height: 100%
+.clearfix:after
+	content: ''
+	display: table
+	clear: both
+.backgroundblendmode
+	.blend-difference
+		mix-blend-mode: difference
+		.header__burger-line
+			background-color: $white
+		.logo
+			color: $white
+		.menu > li > a
+			color: $white
+.border-radius
+	border-radius: $brdr
+.bg-ornament
+	background-image: url('../img/general/bg-ornament.png')
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+.bg-dots
+	width: 256px
+	height: 400px
+	background-image: url('../img/general/bg-dots.png')
+	background-repeat: no-repeat
+	background-position: center center
+.mw-960
+	max-width: 960px
+
+@media only screen and (min-width: $md)
+	.h-lg-100
+		height: 100% !important

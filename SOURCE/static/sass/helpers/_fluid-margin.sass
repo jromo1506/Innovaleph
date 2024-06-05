@@ -1,0 +1,6 @@
+@mixin fluid-margin($min-vw, $max-vw, $min-value, $max-value, $multiplier: 1)
+	margin: calc(#{$multiplier} * (#{$min-value} * 1px))
+	@media screen and (min-width: $min-vw)
+		margin: calc(#{$multiplier} * (#{$min-value} * 1px + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})))
+	@media screen and (min-width: $max-vw)
+		margin: calc(#{$multiplier} * (#{$max-value} * 1px))

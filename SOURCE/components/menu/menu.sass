@@ -1,0 +1,93 @@
+.menu
+	+reset-ul
+	word-wrap: normal
+	text-align: right
+	display: inline-block
+	font-size: 13px
+	> li
+		display: inline-block
+		&:not(:last-child)
+			margin-right: 17px
+		a
+			display: block
+			color: $brown-grey
+			padding: 15px
+			&:hover
+				color: $sandstone
+	> li.menu-item-has-children
+		> a
+			&:after
+				content: '\f107'
+				font-family: 'FontAwesome'
+				display: inline-block
+				vertical-align: middle
+				margin-left: 5px
+
+	> li:not(.menu-item-has-children)
+		a
+			position: relative
+			&:hover
+				&:before
+					left: 15px
+					width: calc(100% - 30px)
+			&:before
+				content: ''
+				position: absolute
+				width: 0
+				height: 1px
+				background-color: $sandstone
+				bottom: 12px
+				right: 15px
+				+trans1
+	.menu-item-has-children
+		position: relative
+		> a
+			&:hover
+				~ ul
+					opacity: 1
+					visibility: visible
+					transform: translate(0, 0)
+
+.menu
+	.sub-menu
+		position: absolute
+		top: 100%
+		left: 15px
+		+reset-ul
+		padding: 10px 0
+		opacity: 0
+		visibility: hidden
+		+trans1
+		transform: translate(0, 10px)
+		box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.05)
+		background-color: $white
+		z-index: 50
+		@extend .border-radius
+		> li
+			display: block
+			white-space: nowrap
+			a
+				display: flex
+				align-items: center
+				padding: 10px 30px
+				border-left: 2px solid transparent
+				&:hover
+					border-color: $sandstone
+					background-color: $light
+		> li.menu-item-has-children
+			> a
+				&:after
+					content: '\f105'
+					font-family: 'FontAwesome'
+					display: inline-block
+					vertical-align: middle
+					margin-left: auto
+					padding-left: 15px
+		ul
+			top: 0
+			left: calc(100% + 1px)
+			transform: translate(10px, 0)
+		&:hover
+			opacity: 1
+			visibility: visible
+			transform: translate(0, 0)

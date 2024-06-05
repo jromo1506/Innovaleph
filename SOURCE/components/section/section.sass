@@ -1,0 +1,32 @@
+.section
+	position: relative
+	z-index: 50
+.section-fullheight
+	display: flex
+.section-fullheight__inner
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 100%
+	min-height: 100vh
+.section__headline
+	display: block
+	width: 100%
+	max-width: 120px
+	height: 1px
+	background-color: $sandstone
+	@include fluid-margin-top($min_width, $max_width, 40, 80)
+.section_z-100
+	z-index: 100
+.section__content
+	position: relative
+	z-index: 60
+
+@media screen and (max-width: $md)
+	.section__headline
+		max-width: 80px
+
+@media screen and (max-width: $xs)
+	.section__headline
+		max-width: 50px

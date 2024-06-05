@@ -1,0 +1,161 @@
+.header
+	padding: 75px 0 0
+.header_absolute
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 500
+.header_fixed
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 500
+.header__burger-line
+	width: 100%
+	height: 2px
+	background-color: $brown-grey
+	margin-top: 3px
+	margin-bottom: 3px
+	transform: rotate(0deg) translateY(0px)
+	will-change: transform
+	+trans2
+.header__wrapper-overlay-menu
+	display: flex
+	align-items: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 500
+	background: none !important
+	overflow-x: hidden
+	overflow-y: auto
+	-webkit-overflow-scrolling: touch
+	opacity: 0
+	visibility: hidden
+.header__burger
+	display: inline-flex
+	flex-direction: column
+	justify-content: center
+	width: 30px
+	height: 20px
+	cursor: pointer
+	vertical-align: middle
+.header__burger_opened
+	.header__burger-line
+		background-color: $brown-grey !important
+		&:nth-child(1)
+			transform: rotate(-45deg) translateY(6px)
+		&:nth-child(2)
+			transform: rotate(45deg) translateY(-6px)
+.header__wrapper-menu
+	position: relative
+	width: 100%
+	max-width: calc(50vw - 300px)
+.header__curtain
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: -1
+.header__wrapper-overlay-widgets
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	padding-bottom: 64px
+	.social
+		margin-top: 1em
+		margin-bottom: 1em
+.header__overlay-menu-back
+	position: absolute
+	top: 0
+	cursor: pointer
+	font-size: 32px !important
+	color: $brown-grey !important
+	opacity: 0
+	visibility: hidden
+.header__controls
+	position: relative
+	z-index: 600
+.header__circle-letters
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto
+	width: 300px
+	height: 300px
+	border: 2px solid $borders-dark
+	border-radius: 100%
+	svg
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		width: 300px
+		height: 300px
+		border-radius: 100%
+		stroke-width: 1px
+		z-index: 50
+		.circle
+			stroke: $sandstone
+.header__circle-letters-inner
+	width: 100%
+	height: 100%
+	position: relative
+
+
+@media screen and (max-width: $xxl)
+	.header
+		padding-top: 50px
+	.header__wrapper-overlay-widgets
+		padding-bottom: 40px
+
+@media screen and (max-width: $xl)
+	.header
+		padding-top: 40px
+	.header__wrapper-overlay-widgets
+		padding-bottom: 30px
+
+@media screen and (max-width: $md)
+	.header
+		padding-top: 20px
+	.header__circle-letters
+		display: none
+	.header__wrapper-menu
+		max-width: 100%
+		margin-top: auto
+		margin-bottom: auto
+	.header__wrapper-overlay-menu
+		text-align: center
+		flex-direction: column
+		padding-top: 80px
+		padding-bottom: 80px
+	.header__wrapper-overlay-widgets
+		text-align: center
+		position: relative
+		left: auto
+		right: auto
+		bottom: auto
+		padding-top: 30px
+		padding-bottom: 30px
+		margin-bottom: auto
+		.text-left, .text-right
+			text-align: center !important
+	
+@media screen and (max-height: 800px) and (min-width: $md)
+	.header
+		padding-top: 40px
+	.header__wrapper-overlay-widgets
+		padding-bottom: 30px

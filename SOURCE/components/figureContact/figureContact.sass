@@ -1,0 +1,17 @@
+.figure-contact
+	text-align: center
+.figure-contact__icon
+	font-size: 36px !important
+	line-height: 1 !important
+	display: inline-block
+	margin-bottom: 30px
+	color: $dusk
+
+@media only screen and (max-width: $sm)
+	.figure-contact__icon
+		font-size: 28px
+		margin-bottom: 20px
+@media screen and (max-width: $md)
+	.figure-contact
+		@include fluid-padding-top($min_width, $max_width, $distance-min-small / 3, $distance-max-small / 2)
+		@include fluid-padding-bottom($min_width, $max_width, $distance-min-small / 3, $distance-max-small / 2)

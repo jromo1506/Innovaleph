@@ -1,0 +1,11 @@
+@media screen and (max-width: $md)
+	.section-properties__item
+		@include fluid-padding-top($min_width, $md, $distance-min-small / 3, $distance-max-small / 2)
+		@include fluid-padding-bottom($min_width, $md, $distance-min-small / 3, $distance-max-small / 2)
+
+@media screen and (max-width: $xs)
+	.section-properties__item
+		&:first-of-type
+			padding-top: 0
+		&:last-of-type
+			padding-bottom: 0

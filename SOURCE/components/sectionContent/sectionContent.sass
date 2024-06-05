@@ -1,0 +1,39 @@
+.section-content__content
+	margin-bottom: -1em
+	*:first-child:not(.section-content__headline):not(.section-content__subheading)
+		margin-top: 0 !important
+.section-content__header
+	*:first-child:not(.section-content__headline):not(.section-content__subheading)
+		margin-top: 0 !important
+.section-content__headline
+	margin-top: 14px !important
+.section-content__header_mb
+	@include fluid-margin-bottom($min_width, $max_width, 0, 40)
+.section-content__headline_right
+	margin-left: auto
+.section-content__headline_left
+	margin-right: auto
+.section-content__headline_center
+	margin-left: auto
+	margin-right: auto
+.section-content__subheading
+	margin-top: 5px
+
+@media screen and (max-width: $md)
+	.section-content__content
+		margin-top: 1em
+		margin-bottom: 0
+		*:last-child
+			margin-bottom: 0
+	.section-content__header
+		*:last-child
+			margin-bottom: 0
+	.section-content__headline
+		margin-top: 0em !important
+		margin-bottom: 0em !important
+	.section-content__headline_right
+		margin-left: 0
+		margin-right: auto
+	.section-content__subheading
+		margin-top: 1em !important
+	

@@ -1,0 +1,46 @@
+.post__content, .post__comments
+	> *:first-child
+		margin-top: 0
+	ul
+		+reset-ul
+		margin-bottom: 1.5em
+		li
+			display: block
+			margin-top: 1em
+			margin-bottom: 1em
+		ul, ol
+			padding-left: 1em
+	ul
+		padding-left: 0.25em
+		> li
+			&:before
+				content: ''
+				display: inline-block
+				width: 10px
+				height: 1px
+				vertical-align: middle
+				margin-right: 0.5em
+				margin-bottom: 3px
+				background-color: $dark
+	ol
+		margin-bottom: 24px
+		padding-left: 1.5em
+		li
+			display: list-item
+			margin-top: 12px
+			margin-bottom: 12px
+		ul, ol
+			padding-left: 16px
+.post__media
+	margin-bottom: 2em
+.post__tags
+	border-top: 2px solid $dusk
+	margin-top: 50px
+	padding-top: 20px
+.post__comments
+	@include fluid-margin-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+.post__read-more
+	padding: 16px 30px
+.sticky
+	background-color: $very-light-pink
+	padding: 50px

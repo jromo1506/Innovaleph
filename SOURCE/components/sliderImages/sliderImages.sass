@@ -1,0 +1,25 @@
+.slider-images
+	display: flex
+	flex-wrap: wrap
+	width: 100%
+.slider-images_footer-bottom
+	.slider-images__footer
+		padding-top: 30px
+		order: 1
+.slider-images_footer-top
+	.slider-images__footer
+		padding-bottom: 30px
+		order: -1
+.slider-images__caption
+	font-weight: bold
+	width: 100%
+.slider-images__slider-captions
+	height: 28px
+
+@media screen and (max-width: $md)
+	.slider-images_footer-bottom
+		.slider-images__footer
+			padding-top: 10px
+	.slider-images_footer-top
+		.slider-images__footer
+			padding-bottom: 10px

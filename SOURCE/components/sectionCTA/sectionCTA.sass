@@ -1,0 +1,19 @@
+.section-cta__line
+	width: 1px
+	height: 120px
+	background-color: $sandstone
+	position: absolute
+	top: -60px
+	left: 0
+	right: 0
+	margin: 0 auto
+	z-index: 100
+.section-cta__heading
+	margin-top: 0
+.section-cta__wrapper-button
+	@include fluid-margin-top($min_width, $max_width, 30, 50)
+
+@media screen and (max-width: $md)
+	.section-cta__line
+		height: 60px
+		top: -30px

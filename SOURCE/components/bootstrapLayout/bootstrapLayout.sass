@@ -1,0 +1,45 @@
+.container-fluid
+	padding-left: 120px
+	padding-right: 120px
+.container-fluid_paddings
+	padding-top: 120px
+	padding-bottom: 120px
+
+.container
+	padding-left: 20px
+	padding-right: 20px
+.row
+	margin-left: -20px
+	margin-right: -20px
+.col, [class*='col-'], [class*='col-']
+	padding-left: 20px
+	padding-right: 20px
+.no-gutters
+	margin-left: 0 !important
+	margin-right: 0 !important
+
+@media screen and (max-width: $xxl)
+	.container-fluid
+		padding-left: 80px
+		padding-right: 80px
+	.container-fluid_paddings
+		padding-top: 80px
+		padding-bottom: 80px
+@media screen and (max-width: $xl)
+	.container-fluid
+		padding-left: 50px
+		padding-right: 50px
+	.container-fluid_paddings
+		padding-top: 50px
+		padding-bottom: 50px
+@media screen and (max-width: $md)
+	.container-fluid, .container
+		padding-left: 20px
+		padding-right: 20px
+	.container-fluid_paddings
+		padding-top: 20px
+		padding-bottom: 20px
+@media screen and (max-width: $xs)
+	.container_xs-no-padding
+		padding-left: 0
+		padding-right: 0

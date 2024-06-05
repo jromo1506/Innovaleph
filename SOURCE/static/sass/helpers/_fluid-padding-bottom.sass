@@ -1,0 +1,6 @@
+@mixin fluid-padding-bottom($min-vw, $max-vw, $min-value, $max-value)
+	padding-bottom: calc(#{$min-value} * 1px)
+	@media screen and (min-width: $min-vw)
+		padding-bottom: calc(#{$min-value} * 1px + (#{$max-value} - #{$min-value}) * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}))
+	@media screen and (min-width: $max-vw)
+		padding-bottom: calc(#{$max-value} * 1px)

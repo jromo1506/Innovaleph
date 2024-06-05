@@ -1,0 +1,48 @@
+.post-preview__wrapper-content
+	> *:first-child
+		margin-top: 0
+.post-preview__media
+	display: block
+	margin-bottom: 1.5em
+	overflow: hidden
+	&:hover, &:focus
+		opacity: 1
+	&:hover
+		> *
+			transform: scale(1.05)
+	> *
+		+trans1
+.post-preview__header
+	h4
+		margin-top: 0
+		margin-bottom: 0.5em
+	a
+		color: $dusk
+		&:hover
+			color: $sandstone
+.post-preview__categories
+	+reset-ul
+	li
+		display: inline-block
+.post-preview__meta
+	margin-bottom: 1em
+	font-size: 13px
+.post-preview__date
+	+small-caps
+.post-preview__wrapper-meta
+	a
+		color: $brown-grey
+	.post-preview__date
+		a
+			color: $sandstone
+.post-preview__wrapper-readmore
+	text-align: right
+	margin-top: 2em
+
+@media screen and (max-width: $md)
+	.post-preview__meta
+		margin: 0.25em 0
+	.post-preview__wrapper-meta
+		margin: 0 0 1em
+	.post-preview__date
+		width: 100%

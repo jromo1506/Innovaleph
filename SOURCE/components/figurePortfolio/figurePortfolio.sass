@@ -1,0 +1,48 @@
+.figure-portfolio
+	display: block
+.figure-portfolio__wrapper-img
+	position: relative
+	overflow: hidden
+.figure-portfolio__content
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 50px
+	background: none !important
+	// z-index: 50
+.figure-portfolio__header
+	position: relative
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	z-index: 50
+.figure-portfolio__category
+	position: relative
+	+small-caps
+	font-weight: normal
+	z-index: 50
+	margin-bottom: 1em
+.figure-portfolio__curtain
+	position: absolute
+	top: -20px
+	left: -20px
+	right: -20px
+	bottom: -100px
+	z-index: 1
+	transform: skewY(0deg) translateY(100%)
+	// +trans1
+.figure-portfolio__heading
+	margin-top: 0
+	margin-bottom: 0
+	line-height: 1.33
+.figure-portfolio__icon
+	margin-top: 10px
+	z-index: 50
+	
+@media screen and (max-width: $md)
+	.figure-portfolio__content
+		padding: 30px
+	.figure-portfolio__icon
+		margin-top: 5px

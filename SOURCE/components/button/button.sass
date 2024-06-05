@@ -1,0 +1,59 @@
+.button
+	position: relative
+	display: inline-block
+	+small-caps
+	font-weight: bold
+	text-align: center
+	+trans1
+	cursor: pointer
+	outline: none
+	box-shadow: none
+	border-width: 2px
+	border-style: solid
+	@extend .border-radius
+	padding: 16px 32px
+	&:focus
+		outline: none
+.button_accent
+	background-color: $pale
+	border-color: $pale
+	color: $brownish-grey
+	.button__icon
+		background-color: $pinkish-grey
+		color: $white
+	&:hover
+		background-color: $pinkish-grey
+		color: $white
+		.button__icon
+			background-color: $brownish-grey
+.button_icon
+	display: inline-flex
+	padding: 0
+	border: none
+.button__label
+	padding: 18px 32px
+.button__icon
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	border-top-right-radius: $brdr
+	border-bottom-right-radius: $brdr
+	width: 60px
+	+trans1
+	i
+		font-size: 24px
+.button_fullwidth
+	width: 100%
+
+
+@media screen and (max-width: $md)
+	.button
+		padding: 12px 28px
+	.button__label
+		padding: 12px 28px
+	.button__icon
+		width: 43px
+		i
+			font-size: 20px
+	.button_icon
+		padding: 0

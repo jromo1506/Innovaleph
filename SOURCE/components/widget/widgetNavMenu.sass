@@ -1,0 +1,36 @@
+.widget_nav_menu
+	ul.menu
+		> li
+			margin-bottom: 1em !important
+			white-space: normal
+			word-break: break-word
+			a
+				display: inline-block
+				padding: 0
+				font-size: 16px
+				&:after, &:before
+					display: none
+		> li.menu-item-has-children
+			margin-bottom: 1.5em !important
+			a
+				&:after
+					display: none
+	ul.sub-menu
+		background-color: transparent
+		position: relative
+		top: auto
+		left: auto
+		right: auto
+		opacity: 1
+		visibility: visible
+		box-shadow: none
+		border-bottom: none
+		transform: none
+		margin-top: 1em
+		> li
+			border-left: none
+			> a
+				padding: 3px 0
+				border-left: none
+				&:hover
+					background-color: unset

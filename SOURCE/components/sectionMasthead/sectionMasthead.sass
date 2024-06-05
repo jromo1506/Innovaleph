@@ -1,0 +1,139 @@
+.section-masthead
+	overflow: hidden
+.section-masthead__header
+	h1
+		margin-bottom: 0.75em
+.section-masthead__background_fullscreen
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	height: 100%
+.section-masthead__overlay
+	z-index: 0
+.section-masthead__inner
+	position: relative
+	z-index: 50
+.section-masthead__wrapper-scroll-down
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 30px
+	text-align: center
+	z-index: 50
+.section-masthead__inner_background
+	width: 760px
+	max-width: 50vw
+	padding-left: 50px
+	padding-right: 50px
+	background: none
+.section-masthead__inner_background-left
+	margin-right: auto
+	margin-left: 0
+	padding-left: 120px
+	padding-right: 30px
+	.section-masthead__wrapper-scroll-down
+		left: 80px
+		right: auto
+.section-masthead__inner_background-right
+	margin-left: auto
+	margin-right: 0
+	padding-left: 120px
+	padding-right: 30px
+	.section-masthead__wrapper-scroll-down
+		left: 80px
+		right: auto
+.section-masthead__background-right
+	left: 760px
+.section-masthead__background-left
+	right: 760px
+.section-masthead__meta
+	display: inline-flex
+	justify-content: center
+	flex-wrap: wrap
+	margin: 0 -1em 1em
+	max-width: 100%
+	.post-preview__meta
+		margin: 1em
+		max-width: 100%
+		@include fluid-type($min_width, $max_width, 13, 16)
+		a
+			color: $brown-grey
+	.post-preview__date
+		a
+			color: $sandstone
+.section-masthead__curtain
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	z-index: -1
+.section-masthead_big-heading
+	top: 0
+	left: 0
+	right: 0
+	z-index: 100
+.section-masthead__heading-big
+	margin-top: 0
+	margin-bottom: 0
+	color: $brown-grey
+	opacity: .3
+.section-masthead__wrapper-button
+	margin-top: 2em
+
+@media screen and (max-width: $xxl)
+	.section-masthead__inner_background-left
+		padding-left: 80px
+		.section-masthead__wrapper-scroll-down
+			left: 40px
+	.section-masthead__inner_background-right
+		padding-left: 80px
+		.section-masthead__wrapper-scroll-down
+			left: 40px
+
+@media screen and (max-width: $xl)
+	.section-masthead__inner_background-left
+		padding-left: 60px
+		.section-masthead__wrapper-scroll-down
+			left: 20px
+	.section-masthead__inner_background-right
+		padding-left: 60px
+		.section-masthead__wrapper-scroll-down
+			left: 20px
+
+@media screen and (max-width: $md)
+	.section-masthead__meta
+		.post-preview__meta
+			// display: block
+			margin: 0.5em
+		.post-preview__wrapper-meta
+			margin: -0.5em -0.5em 0.5em
+		.post-preview__date
+			display: block
+			width: 100%
+	.section-masthead__curtain
+		opacity: .8
+		mix-blend-mode: multiply
+	.section-masthead__inner_background
+		max-width: 100vw
+		width: 100%
+	.section-masthead__inner_background-left
+		padding-left: 20px
+		.section-masthead__wrapper-scroll-down
+			left: 20px
+			right: 20px
+			margin: 0 auto
+	.section-masthead__inner_background-right
+		padding-left: 20px
+		.section-masthead__wrapper-scroll-down
+			left: 20px
+			right: 20px
+			margin: 0 auto
+
+@media screen and (max-width: $sm)
+	.section-masthead__inner_background
+		padding-left: 20px
+		padding-right: 20px
+	.section-masthead__wrapper-scroll-down
+		bottom: 20px

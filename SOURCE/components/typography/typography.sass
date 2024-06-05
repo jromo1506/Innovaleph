@@ -1,0 +1,123 @@
+h1, h2, h3, h4, h5, h6
+	font-family: $font-secondary
+	color: $dusk
+h1, h2, h3
+	margin-top: 0.5em
+	margin-bottom: 0.5em
+h4, h5, h6
+	margin-top: 0.75em
+	margin-bottom: 0.75em
+h1
+	@include fluid-type($min_width, $max_width, $h1-min-font-size, $h1-max-font-size)
+	font-weight: bold
+	line-height: $h1-line-height
+	margin-top: 0
+h2
+	@include fluid-type($min_width, $max_width, $h2-min-font-size, $h2-max-font-size)
+	font-weight: bold
+	line-height: $h2-line-height
+h3
+	@include fluid-type($min_width, $max_width, $h3-min-font-size, $h3-max-font-size)
+	font-weight: bold
+	line-height: $h3-line-height
+h4
+	@include fluid-type($min_width, $max_width, $h4-min-font-size, $h4-max-font-size)
+	font-weight: bold
+	line-height: $h4-line-height
+h5
+	@include fluid-type($min_width, $max_width, $h5-min-font-size, $h5-max-font-size)
+	font-weight: bold
+	line-height: $h5-line-height
+h6
+	@include fluid-type($min_width, $max_width, $h6-min-font-size, $h6-max-font-size)
+	font-weight: bold
+	line-height: $h6-line-height
+.h1
+	@include fluid-type($min_width, $max_width, $h1-min-font-size, $h1-max-font-size)
+	font-weight: bold
+	line-height: $h1-line-height
+	margin-top: 0
+.h2
+	@include fluid-type($min_width, $max_width, $h2-min-font-size, $h2-max-font-size)
+	font-weight: bold
+	line-height: $h2-line-height
+.h3
+	@include fluid-type($min_width, $max_width, $h3-min-font-size, $h3-max-font-size)
+	font-weight: bold
+	line-height: $h3-line-height
+.h4
+	@include fluid-type($min_width, $max_width, $h4-min-font-size, $h4-max-font-size)
+	font-weight: bold
+	line-height: $h4-line-height
+.h5
+	@include fluid-type($min_width, $max_width, $h5-min-font-size, $h5-max-font-size)
+	font-weight: bold
+	line-height: $h5-line-height
+.h6
+	@include fluid-type($min_width, $max_width, $h6-min-font-size, $h6-max-font-size)
+	font-weight: bold
+	line-height: $h6-line-height
+p
+	margin-top: 1em
+	margin-bottom: 1em
+	@include fluid-type($min_width, $max_width, $paragraph-min-font-size, $paragraph-max-font-size)
+	line-height: $paragraph-line-height
+strong, b
+	font-weight: bold
+small
+	display: block
+	font-size: 13px
+	line-height: 1.5
+	color: $brown-grey
+.subheading
+	+small-caps
+	@include fluid-type($min_width, $max_width, $subheading-min-font-size, $subheading-max-font-size)
+	line-height: $subheading-line-height
+	margin-bottom: 1em
+.heading-light
+	font-weight: normal
+blockquote
+	display: block
+	background-color: $off-white
+	color: $dusk
+	font-family: $font-secondary
+	@include fluid-type($min_width, $max_width, $blockquote-min-font-size, $blockquote-max-font-size)
+	line-height: $blockquote-line-height
+	font-style: italic
+	padding: 3em
+	margin-top: 2em
+	margin-bottom: 2em
+	p
+		margin-top: 0
+		@include fluid-type($min_width, $max_width, $blockquote-min-font-size, $blockquote-max-font-size)
+cite
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-family: $font-primary
+	font-style: normal
+	@include fluid-type($min_width, $max_width, $paragraph-min-font-size, $paragraph-max-font-size)
+	margin-top: 1em
+	color: $sandstone
+	&:before
+		content: ''
+		display: block
+		width: 50px
+		height: 1px
+		background-color: $sandstone
+		margin-right: 1em
+.text-xl
+	@include fluid-type($min_width, $max_width, $text-xl-min-font-size, $text-xl-max-font-size)
+	line-height: $text-xl-line-height
+.text-xxl
+	@include fluid-type($min_width, $max_width, $text-xxl-min-font-size, $text-xxl-max-font-size)
+	line-height: $text-xxl-line-height
+
+@media only screen and (max-width: $md)
+	h1, .h1
+		margin-bottom: 1em
+	h2, h3, h4, h5, h6, .h2, .h3, .h4, .h5, .h6
+		margin-top: 1em
+		margin-bottom: 1em
+	blockquote
+		padding: 2em

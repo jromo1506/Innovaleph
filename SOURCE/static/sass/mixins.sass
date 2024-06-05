@@ -1,0 +1,43 @@
+@function rem($size)
+	$remSize: $size / $em-base
+	@return #{$remSize}rem
+@mixin trans1
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.150, 0.860)
+@mixin trans2
+	transition: all 0.6s cubic-bezier(0.785, 0.135, 0.150, 0.860)
+@mixin reset-ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+@mixin shadow
+	box-shadow: 0px 0px 30px 0px rgba(24, 24, 24, 0.1)
+@mixin small-caps
+	font-family: $font-primary
+	@include fluid-type($min_width, $max_width, $subheading-min-font-size, $subheading-max-font-size)
+	font-weight: bold
+	line-height: $subheading-line-height
+	letter-spacing: 2px
+	color: $brown-grey
+	text-transform: uppercase
+
+
+@function strip-unit($value)
+	@return calc($value / ($value * 0 + 1px))
+
+@function em($pixels, $context: $em-base)
+	@if (unitless($pixels))
+		$pixels: $pixels * 1px
+
+	@if (unitless($context))
+		$context: $context * 1px
+
+	@return calc($pixels / $context * 1em)
+
+@function rem($pixels, $context: $em-base)
+	@if (unitless($pixels))
+		$pixels: $pixels * 1px
+
+	@if (unitless($context))
+		$context: $context * 1px
+
+	@return calc($pixels / $context * 1rem)

@@ -1,0 +1,25 @@
+.figure-award
+	position: relative
+	@include fluid-padding-top($min_width, $max_width, 30, 50)
+	@include fluid-padding-bottom($min_width, $max_width, 30, 50)
+.figure-award__year
+	font-family: $font-primary
+	font-weight: 100
+	line-height: 1
+	@include fluid-type($min_width, $max_width, 42, 65)
+	color: $sandstone
+.figure-award__items
+	> *:first-child
+		margin-top: 0
+	> *:last-child
+		margin-bottom: 0
+.figure-award__border-line
+	position: absolute
+	left: 0
+	bottom: 0
+	right: 0
+	border: 1px solid $borders-light
+
+@media screen and (max-width: $xs)
+	.figure-award__year
+		margin-bottom: 30px

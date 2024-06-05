@@ -1,0 +1,52 @@
+.scroll-down
+	display: inline-flex
+	flex-direction: column
+	align-items: center
+	cursor: pointer
+	width: 100px
+	&:hover
+		.scroll-down__line
+			transform: scaleY(0)
+			transition-delay: 0s
+		.scroll-down__circle-1
+			transform: translateY(110px)
+			transition-delay: 0.2s
+.scroll-down__circle-1
+	display: block
+	width: 12px
+	height: 12px
+	background-color: $pinkish-grey
+	border-radius: 100%
+	+trans2
+.scroll-down__line
+	width: 1px
+	height: 60px
+	background-color: $pinkish-grey
+	margin-top: 16px
+	margin-bottom: 16px
+	transform-origin: bottom center
+	+trans2
+	transition-delay: 0.2s
+.scroll-down__circle-2
+	width: 24px
+	height: 24px
+	border: 1px solid $brown-grey
+	border-radius: 100%
+	+trans2
+
+
+@media screen and (max-width: $sm)
+	.scroll-down__circle-1
+		width: 8px
+		height: 8px
+	.scroll-down__line
+		height: 40px
+		margin-top: 8px
+		margin-bottom: 8px
+	.scroll-down__circle-2
+		width: 18px
+		height: 18px
+	.scroll-down
+		&:hover
+			.scroll-down__circle-1
+				transform: translateY(69px)

@@ -1,0 +1,45 @@
+.menu-overlay
+	+reset-ul
+	> li
+		display: block
+		> a
+			display: block
+			font-family: $font-secondary
+			@include fluid-type($min_width, $max_width, 28, 42)
+			font-weight: bold
+.menu-overlay__item-wrapper
+	width: 100%
+	height: 100%
+	font-family: $font-secondary
+.menu-overlay .sub-menu
+	display: inline-flex
+	flex-direction: column
+	justify-content: flex-start
+	position: absolute
+	bottom: 0
+	left: 0
+	height: 100%
+	width: 100%
+	+reset-ul
+	z-index: -1
+	opacity: 0
+	visibility: hidden
+	> li
+		display: block
+		margin-top: 0.25em
+		margin-bottom: 0.25em
+		> a
+			display: block
+			font-family: $font-secondary
+			font-size: 20px
+			@include fluid-type($min_width, $max_width, 20, 26)
+			font-weight: bold
+			line-height: 1.2
+			padding: 8px 0
+
+@media screen and (max-width: $md)
+	.menu-overlay
+		> li
+			> a
+				margin-top: 0.25em
+				margin-bottom: 0.25em

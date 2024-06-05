@@ -1,0 +1,90 @@
+.section-nav-projects__inner
+	position: relative
+	flex-wrap: wrap
+	align-items: center
+	@include fluid-padding-top($min_width, $max_width, $distance-min-small, $distance-max-small)
+	@include fluid-padding-bottom($min_width, $max_width, $distance-min-small, $distance-max-small)
+	overflow: hidden
+.section-nav-projects__inner_all
+	display: flex
+	align-items: center
+	justify-content: center
+	text-align: center
+.section-nav-projects__inner_prev
+	text-align: left
+	justify-content: flex-start
+.section-nav-projects__inner_next
+	text-align: right
+	justify-content: flex-end
+.section-nav-projects__arrow
+	position: absolute
+	top: 50%
+	transform: translateY(-50%)
+	display: inline-block
+	font-size: 32px !important
+.section-nav-projects__arrow_prev
+	left: 120px
+.section-nav-projects__arrow_next
+	right: 120px
+.section-nav-projects__heading
+	font-family: $font-secondary
+	@include fluid-type($min_width, $max-width, 34, 52)
+	font-weight: bold
+	line-height: 1.28
+	margin-bottom: 0.25em
+.section-nav-projects__wrapper-heading_prev
+	padding-right: 20px
+	padding-left: 120px
+.section-nav-projects__wrapper-heading_next
+	padding-left: 20px
+	padding-right: 120px
+
+@media screen and (max-width: $xxl)
+	.section-nav-projects__arrow_prev
+		left: 70px
+	.section-nav-projects__arrow_next
+		right: 70px
+	.section-nav-projects__wrapper-heading_prev
+		padding-left: 80px
+	.section-nav-projects__wrapper-heading_next
+		padding-right: 80px
+		
+@media screen and (max-width: $xl)
+	.section-nav-projects__arrow_prev
+		left: 40px
+	.section-nav-projects__arrow_next
+		right: 40px
+	.section-nav-projects__wrapper-heading_prev
+		padding-left: 50px
+	.section-nav-projects__wrapper-heading_next
+		padding-right: 50px
+
+@media screen and (max-width: $md)
+	.section-nav-projects__arrow_prev
+		left: 10px
+	.section-nav-projects__arrow_next
+		right: 10px
+	.section-nav-projects__wrapper-heading_prev
+		padding-left: 20px
+	.section-nav-projects__wrapper-heading_next
+		padding-right: 20px
+
+@media screen and (max-width: $sm)
+	.section-nav-projects__inner_prev
+		text-align: center
+		justify-content: center
+	.section-nav-projects__inner_next
+		text-align: center
+		justify-content: center
+	.section-nav-projects__inner:not(:last-child)
+		border-bottom: 1px solid $borders-light
+	.section-nav-projects__arrow
+		position: relative
+		top: auto
+		right: auto
+		left: auto
+		transform: none
+		margin-top: 0.25em
+		font-size: 24px !important
+	.section-nav-projects__inner
+		flex-direction: column

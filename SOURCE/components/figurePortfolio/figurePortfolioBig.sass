@@ -1,0 +1,46 @@
+.figure-portfolio-big
+	display: block
+	position: relative
+	&:hover
+		.figure-portfolio-big__wrapper-img-inner
+			transform: scale(0.95)
+		.figure-portfolio-big__wrapper-img img
+			transform: scale(1.2)
+		.figure-portfolio-big__content
+			transform: translate(0, -25%)
+.figure-portfolio-big__category
+	margin-top: 0.5em
+	margin-bottom: 0
+	+small-caps
+	color: $sandstone
+	font-weight: normal
+.figure-portfolio-big__heading
+	margin-top: 0.75em
+	margin-bottom: 0.5em
+.figure-portfolio-big__letter
+	position: absolute
+	top: 0
+	left: 0
+	transform: translateX(-75%)
+	z-index: -1
+	color: $brown-grey
+	font-family: $font-secondary
+	font-weight: bold
+	line-height: 0.66
+	@include fluid-type($min_width, $max_width, 67, 250)
+	opacity: .15
+.figure-portfolio-big__wrapper-img img
+	+trans1
+	transform-origin: center center
+	transform: scale(1)
+.figure-portfolio-big__wrapper-img-inner
+	+trans1
+	transform-origin: center center
+	transform: scale(1)
+	overflow: hidden
+.figure-portfolio-big__content
+	+trans1
+
+@media screen and (max-width: $lg)
+	.figure-portfolio-big__letter
+		display: none

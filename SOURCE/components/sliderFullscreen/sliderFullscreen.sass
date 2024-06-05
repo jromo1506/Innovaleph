@@ -1,0 +1,91 @@
+.slider-fullscreen
+	position: relative
+	// width: 100vw
+	// height: 100vh
+	height: calc(var(--fix-bar-vh, 1vh) * 100)
+.slider-fullscreen__header
+	h1
+		display: inline-block
+		margin-top: 0
+		margin-bottom: 0
+.slider-fullscreen__images
+	position: relative
+	width: 100%
+	height: 100%
+	// position: absolute
+	// top: 0
+	// left: 0
+	// width: 100%
+	// height: 100%
+	// z-index: -1
+.slider-fullscreen__images-slide
+	will-change: transform
+.slider-fullscreen__content
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+	// text-align: center
+	padding-bottom: 80px
+	z-index: 60
+.slider-fullscreen__content_centered
+	top: 50%
+	transform: translateY(-50%)
+	bottom: auto
+	padding-bottom: 0
+.slider-fullscreen__footer
+	position: absolute
+	top: 50%
+	left: 0
+	right: 0
+	transform: translateY(-50%)
+	z-index: 50
+.slider-fullscreen__footer-inner
+	position: relative
+	height: 100px
+.slider-fullscreen__footer-divider
+	position: absolute
+	top: 50%
+	left: 0
+	background-color: rgba(255, 255, 255, .1)
+	width: 100%
+	height: 1px
+	transform: translateY(-50%)
+.slider-fullscreen__arrows
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+.slider-fullscreen__progress
+	flex-direction: column
+	justify-content: space-between
+	height: 100%
+	width: 50px
+.slider-fullscreen__counter-divider
+	position: absolute
+	top: -1px
+	left: 0
+	right: 0
+	bottom: 0
+	margin: auto !important
+	transform: none !important
+	width: 50px !important
+	height: 1px !important
+	transform: none !important
+.slider-fullscreen__wrapper-button
+	@include fluid-margin-top($min_width, $max_width, 20, 40)
+	// overflow: hidden
+	// a
+	// 	display: inine-block
+	// 	color: $white
+
+@media screen and (max-width: $xxl)
+	.slider-fullscreen__content
+		padding-bottom: 60px
+
+@media screen and (max-width: $xl)
+	.slider-fullscreen__content
+		padding-bottom: 25px
+
+@media screen and (max-width: $md)
+	.slider-fullscreen
+		// height: auto

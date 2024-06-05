@@ -1,0 +1,42 @@
+.figure-post
+	display: block
+	&:hover
+		.figure-post__wrapper-img img
+			transform: scale(1.05)
+	&:hover
+		.figure-post__wrapper-img-inner
+			transform: scale(0.95)
+		.figure-post__wrapper-img img
+			transform: scale(1.2)
+		.figure-post__content
+			transform: translate(0, -25%)
+		.figure-post__line
+			transform: scaleY(0)
+.figure-post__date
+	+small-caps
+	color: $sandstone
+.figure-post__wrapper-img
+	position: relative
+	img
+		width: 100%
+		+trans1
+.figure-post__line
+	display: inline-block
+	width: 1px
+	height: 60px
+	background-color: $sandstone
+	position: absolute
+	bottom: -30px
+	z-index: 50
+	+trans1
+	transform-origin: top center
+.figure-post__content
+	padding-top: 60px
+.figure-post__heading
+	margin-top: 0.5em
+	margin-bottom: 0
+.figure-post__wrapper-img-inner
+	+trans1
+	overflow: hidden
+.figure-post__content
+	+trans1
