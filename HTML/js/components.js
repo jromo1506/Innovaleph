@@ -5537,4 +5537,169 @@ function syncAttributes($sourceElement, $targetElement) {
 }
 
 
+	
+	
+
 })(jQuery);
+
+/*!========================================================================
+	Perfiles
+	======================================================================!*/
+
+	function showInfo(cardNumber) {
+		var infoText = '';
+		if (cardNumber === 1) {
+			infoText = `
+				<div class="info-section">
+					<div class="info-title">FORMACIÓN</div>
+					<p>2022 – 2023</p>
+					<p>Maestría: Evaluación y Administración de Proyectos.</p>
+					<p>Escuela Empresarial</p>
+					<p>Universidad Panamericana | Aguascalientes, AGU</p>
+				</div>
+				<div class="info-section">
+					<p>2013 – 2018</p>
+					<p>Licenciatura: Arquitectura</p>
+					<p>Escuela de Arquitectura Arte y Diseño (EAAD)</p>
+					<p>Tecnológico de Monterrey | Santiago de Querétaro, QRO.</p>
+					<div class="info-title">HABILIDADES</div>
+					<ul>
+						<li>Ingles avanzado</li>
+						<li>Evaluación de proyectos</li>
+						<li>Gestión de proyectos</li>
+						<li>Comunicación efectiva</li>
+						<li>Capacidad de liderazgo</li>
+						<li>Toma de decisiones</li>
+						<li>Creatividad</li>
+						<li>Orientación al cliente</li>
+						<li>Trabajo en equipo</li>
+						<li>Enseñanza didáctica</li>
+						<li>Resolución de problemas</li>
+						<li>Proactividad</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<div class="info-title">HISTORIA LABORAL</div>
+					<p>01/2022 - Actual</p>
+					<p>Arquitecto proyectista / Constructor</p>
+					<p>Independiente | Aguascalientes</p>
+					<ul>
+						<li>Realización de proyectos arquitectónicos tipo residenciales y comerciales, desde la etapa conceptual hasta el desarrollo del proyecto ejecutivo.</li>
+						<li>Ejecución de proyectos de inversión inmobiliaria.</li>
+						<li>Gestión y supervisión de obra, recursos humanos y materiales para el correcto desarrollo del proyecto.</li>
+						<li>Seguimiento y asesoramiento constante durante las distintas etapas del proyecto.</li>
+						<li>Dirección de Personal en diferentes niveles y colaboración multidisciplinaria.</li>
+						<li>Negociaciones con clientes y proveedores.</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<p>07/2019 - 01/2022</p>
+					<p>Socio fundador</p>
+					<p>MDL Arquitectos | Aguascalientes</p>
+					<ul>
+						<li>Implementación de metodología BIM (Building Information Modeling).</li>
+						<li>Realización de proyectos arquitectónicos tipo residenciales y comerciales, desde la etapa conceptual hasta el desarrollo del proyecto ejecutivo.</li>
+						<li>Gestión y supervisión de obra, y los recursos humanos y materiales para el correcto desarrollo del proyecto.</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<p>06/2018 - 06/2019</p>
+					<p>Arquitecto proyectista</p>
+					<p>LM Arkylab | Aguascalientes</p>
+					<ul>
+						<li>Diseño y ejecución de proyectos arquitectónicos variados entre los que se encuentran: residencias, restaurantes, comercio, departamentos, centros deportivos y de esparcimiento.</li>
+						<li>Creación y diseño de recursos gráficos para la presentación de proyectos a clientes e inversionistas.</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<p>01/2017 - 06/2017</p>
+					<p>Practicante de arquitectura</p>
+					<p>G3 Arquitectos | Querétaro</p>
+					<ul>
+						<li>Modelado 3D de proyectos de construcción en Building Information Modeling.</li>
+						<li>Preparación de documentación de proyectos como planos y memorias.</li>
+						<li>Dibujo de planos técnicos detallados para su uso por parte de contratistas.</li>
+					</ul>
+					<div class="contact-info">
+						<p>Tel: 449 904 88 63</p>
+						<p>Email: arquitectura@albertomaciascornejo.com</p>
+					</div>
+				</div>
+			`;
+		} else if (cardNumber === 2) {
+			infoText = `
+				<div class="info-section">
+					<p><strong>Lugar y fecha de nacimiento:</strong> Encarnación de Díaz, Jal., 04 de diciembre de 1982</p>
+				</div>
+				<div class="info-section">
+					<div class="info-title">Escolaridad</div>
+					<p>Lic. En Contaduría Pública.</p>
+					<p>Universidad Autónoma de Aguascalientes, (2002-2006)</p>
+				</div>
+				<div class="info-section">
+					<div class="info-title">Actividades profesionales:</div>
+					<ul>
+						<li><strong>Actual:</strong> Director General en Despacho Ortiz (Jul/14 - Actual)</li>
+						<li><strong>Anterior:</strong> Contador General de Tranec, S.A. de C.V. (Nov-07 Actual.) (Prop. Ing. Mario Hernández A. Constructora Eléctr, Tel. 01 475953 3900)</li>
+						<li><strong>Anterior:</strong> Analista Fiscal, Cenexis, S.A. de C.V. Miembro de Grupo modelo (Feb-07 Ago-07) (Jefe Inmediato C.P. Antonio Santa Cruz y/o C.P. Gustavo Saénz Esparza 449 1393300)</li>
+						<li><strong>Anterior:</strong> Staff del área fiscal (Nivel Superior) de RSM Bogarín, Erhard, Padilla, Alvarez, Martínez S.C., Firma Nacional en México y Miembro de RSM International. (abr-05 Ene-07) (Jefe inmediato C.P. José de Jesús López Martínez y/o C.P. Martín Escalante Jiménez Tel. 449 9964565, 66)</li>
+						<li><strong>Anterior:</strong> Ayudante de Auditoría financiera de RSM Bogarín, Erhard, Padilla, Alvarez, Martínez S.C., Firma Nacional en México y Miembro de RSM International. (Mar-03 Abr-05) (Jefe Inmediato C.P. Germán Ramírez Ortíz Tel. 4499150005)</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<div class="info-title">Área en que desempeño mejor</div>
+					<p>Asesor financiero, Fiscal, contable, Servicios Contables, Fiscales y Auditoria financiera y fiscal en sector privado y público</p>
+				</div>
+				<div class="info-section">
+					<div class="info-title">Logros profesionales</div>
+					<ul>
+						<li>CEO Despacho Ortiz</li>
+						<li>Empresario de distintos giros</li>
+					</ul>
+				</div>
+				<div class="info-section">
+					<div class="info-title">Educación Continua</div>
+					<ul>
+						<li>Dirección Disruptiva 2016 IPADE</li>
+						<li>Curso de Reformas Fiscales 2009. CCPA</li>
+						<li>Mejores ventas para mayores utilidades. IGNIUS</li>
+						<li>Toma de decisiones en Auditoria financiera. RSM</li>
+					</ul>
+				</div>
+			`;
+		} else if (cardNumber === 3) {
+			infoText = `
+            <div class="info-section">
+                <p><strong>Fecha de nacimiento:</strong>26 Enero 1995</p>
+            </div>
+            <div class="info-section">
+                <div class="info-title">Educación</div>
+                <p>Lic. Administración de Empresas UNEA</p>
+                <p>Diplomado en Constructivismo de liderazgo y equipos de alto rendimiento UNIVA</p>
+                <p>Liderazgo TLANEMANI</p>
+                <p>Derechos Humanos CNDH (Cursando)</p>
+            </div>
+            <div class="info-section">
+                <div class="info-title">Proyecto Social</div>
+                <p>FEMME MARKET</p>
+                <p>Mujer Empírica</p>
+            </div>
+            <div class="info-section">
+                <div class="info-title">Creadora Multimarca</div>
+                <ul>
+                    <li>Lizart</li>
+                    <li>Chéri Picnic</li>
+                    <li>Mia Nonna</li>
+                </ul>
+            </div>
+            <div class="info-section">
+                <div class="info-title">Comisión</div>
+                <p>Presido comisión de Mujeres Empresarias Coparmex</p>
+            </div>
+        `;
+		}
+		document.getElementById('info-text').innerHTML = infoText;
+	}
+	
+	
+	
