@@ -3899,6 +3899,11 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
+#noocultar{
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
 .post-preview__header h4 {
   margin-top: 0;
   margin-bottom: 0.5em;
