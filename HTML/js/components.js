@@ -5545,8 +5545,17 @@ function syncAttributes($sourceElement, $targetElement) {
 /*!========================================================================
 	Perfiles
 	======================================================================!*/
-
 	function showInfo(cardNumber) {
+
+		var cards = document.getElementsByClassName('card');
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].classList.remove('active-card');
+		}
+	
+		var activeCard = cards[cardNumber - 1]; 
+		activeCard.classList.add('active-card');
+	
+		
 		var infoText = '';
 		if (cardNumber === 1) {
 			infoText = `
@@ -5701,5 +5710,7 @@ function syncAttributes($sourceElement, $targetElement) {
 		document.getElementById('info-text').innerHTML = infoText;
 	}
 	
-	
+	document.addEventListener('DOMContentLoaded', function() {
+		showInfo(1);
+	});
 	

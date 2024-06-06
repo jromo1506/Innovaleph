@@ -8230,6 +8230,12 @@ cite:before {
 
 }
 
+
+.active-card {
+    background-color: #f0f0f0 !important; 
+    border: 2px solid #007BFF !important; 
+}
+
 .card-container {
   display: flex;
   gap: 20px;
