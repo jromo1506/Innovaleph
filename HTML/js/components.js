@@ -5559,6 +5559,7 @@ function syncAttributes($sourceElement, $targetElement) {
 		var infoText = '';
 		if (cardNumber === 1) {
 			infoText = `
+			<div>
 				<div class="info-section">
 					<div class="info-title">FORMACIÓN</div>
 					<p>2022 – 2023</p>
@@ -5634,6 +5635,7 @@ function syncAttributes($sourceElement, $targetElement) {
 						<p>Email: arquitectura@albertomaciascornejo.com</p>
 					</div>
 				</div>
+			</div>
 			`;
 		} else if (cardNumber === 2) {
 			infoText = `

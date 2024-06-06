@@ -8224,7 +8224,6 @@ cite:before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   margin: 0;
   padding: 20px;
 
@@ -8317,7 +8316,6 @@ cite:before {
 .contact-info {
   margin-top: 20px;
 }
-
 
 
 /*----------------------------------------------------------------------------*/
