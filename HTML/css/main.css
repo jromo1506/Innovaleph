@@ -227,9 +227,7 @@ a:hover, a:focus {
   color: var(--color-accent-primary-4);
 }
 
-.page-wrapper__content {
-  overflow-x: hidden;
-}
+
 
 [data-header-animation=intransition] a {
   pointer-events: none !important;
