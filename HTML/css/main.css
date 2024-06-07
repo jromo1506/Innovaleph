@@ -2,7 +2,7 @@
  * ==========================================================================
  * ==========================================================================
  *
- * Innovaleph – Architect Portfolio AJAX HTML5 Template
+ * Innovaleph
  *
  * [Table of Contents]
  *
@@ -127,7 +127,7 @@
 :root {
   --font-primary:"Josefin Sans", sans-serif;
   --font-secondary: "Josefin Sans", sans-serif;
-  --color-accent-primary-1: #3ac4c2;
+  --color-accent-primary-1: #004A46;
   --color-accent-primary-2: #ebe6dd;
   --color-accent-primary-3: #ffffff;
   --color-accent-primary-4: #837567;
@@ -7783,7 +7783,7 @@ cite:before {
 
 .bg-ornament {
 
- background-image: url("../../imgs/background.png"); 
+ background-image: url("../img/imgs/background.png"); 
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
