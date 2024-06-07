@@ -5554,25 +5554,11 @@ function syncAttributes($sourceElement, $targetElement) {
 	
 		var activeCard = cards[cardNumber - 1]; 
 		activeCard.classList.add('active-card');
-	
 		
-		var infoText = '';
-		if (cardNumber === 1) {
-			infoText = `
-			<div>
-				<div class="info-section">
-					<div class="info-title">FORMACIÓN</div>
-					<p>2022 – 2023</p>
-					<p>Maestría: Evaluación y Administración de Proyectos.</p>
-					<p>Escuela Empresarial</p>
-					<p>Universidad Panamericana | Aguascalientes, AGU</p>
-				</div>
-				<div class="info-section">
-					<p>2013 – 2018</p>
-					<p>Licenciatura: Arquitectura</p>
-					<p>Escuela de Arquitectura Arte y Diseño (EAAD)</p>
-					<p>Tecnológico de Monterrey | Santiago de Querétaro, QRO.</p>
-					<div class="info-title">HABILIDADES</div>
+		/*1
+
+
+		<div class="info-title">HABILIDADES</div>
 					<ul>
 						<li>Ingles avanzado</li>
 						<li>Evaluación de proyectos</li>
@@ -5587,6 +5573,25 @@ function syncAttributes($sourceElement, $targetElement) {
 						<li>Resolución de problemas</li>
 						<li>Proactividad</li>
 					</ul>
+
+
+		*/
+		
+		var infoText = '';
+		if (cardNumber === 1) {
+			infoText = `
+			<div>
+				<div class="info-section">
+					<div class="info-title">FORMACIÓN</div>
+					<p>Licenciatura en Arquitectura.</p>
+					<p>Escuela de Arquitectura Arte y Diseño (EAAD).</p>
+					<p>Tecnológico de Monterrey | Santiago de Querétaro, (2013 – 2018).</p>
+				</div>
+				<div class="info-section">
+				<p>Maestría en Evaluación y Administración de Proyectos.</p>
+				<p>Escuela Empresarial. </p>
+				<p>Universidad Panamericana de Aguascalientes, (2022 – 2023).</p>
+					
 				</div>
 				<div class="info-section">
 					<div class="info-title">HISTORIA LABORAL</div>
@@ -5631,8 +5636,9 @@ function syncAttributes($sourceElement, $targetElement) {
 						<li>Dibujo de planos técnicos detallados para su uso por parte de contratistas.</li>
 					</ul>
 					<div class="contact-info">
+					<div class="info-title">CONTACTO</div>
 						<p>Tel: 449 904 88 63</p>
-						<p>Email: arquitectura@albertomaciascornejo.com</p>
+						<p>Email: proyectos@innovaleph.com</p>
 					</div>
 				</div>
 			</div>
@@ -5640,15 +5646,12 @@ function syncAttributes($sourceElement, $targetElement) {
 		} else if (cardNumber === 2) {
 			infoText = `
 				<div class="info-section">
-					<p><strong>Lugar y fecha de nacimiento:</strong> Encarnación de Díaz, Jal., 04 de diciembre de 1982</p>
-				</div>
-				<div class="info-section">
-					<div class="info-title">Escolaridad</div>
+					<div class="info-title">FORMACIÓN</div>
 					<p>Lic. En Contaduría Pública.</p>
 					<p>Universidad Autónoma de Aguascalientes, (2002-2006)</p>
 				</div>
 				<div class="info-section">
-					<div class="info-title">Actividades profesionales:</div>
+					<div class="info-title">HISTORIA LABORAL:</div>
 					<ul>
 						<li><strong>Actual:</strong> Director General en Despacho Ortiz (Jul/14 - Actual)</li>
 						<li><strong>Anterior:</strong> Contador General de Tranec, S.A. de C.V. (Nov-07 Actual.) (Prop. Ing. Mario Hernández A. Constructora Eléctr, Tel. 01 475953 3900)</li>
@@ -5658,16 +5661,20 @@ function syncAttributes($sourceElement, $targetElement) {
 					</ul>
 				</div>
 				<div class="info-section">
-					<div class="info-title">Área en que desempeño mejor</div>
-					<p>Asesor financiero, Fiscal, contable, Servicios Contables, Fiscales y Auditoria financiera y fiscal en sector privado y público</p>
-				</div>
-				<div class="info-section">
 					<div class="info-title">Logros profesionales</div>
 					<ul>
 						<li>CEO Despacho Ortiz</li>
 						<li>Empresario de distintos giros</li>
 					</ul>
 				</div>
+				
+			`;
+			/**
+			 * <div class="info-section">
+					<div class="info-title">Área en que desempeño mejor</div>
+					<p>Asesor financiero, Fiscal, contable, Servicios Contables, Fiscales y Auditoria financiera y fiscal en sector privado y público</p>
+				</div>
+				
 				<div class="info-section">
 					<div class="info-title">Educación Continua</div>
 					<ul>
@@ -5677,20 +5684,17 @@ function syncAttributes($sourceElement, $targetElement) {
 						<li>Toma de decisiones en Auditoria financiera. RSM</li>
 					</ul>
 				</div>
-			`;
+			 */
 		} else if (cardNumber === 3) {
 			infoText = `
             <div class="info-section">
-                <p><strong>Fecha de nacimiento:</strong>26 Enero 1995</p>
-            </div>
-            <div class="info-section">
-                <div class="info-title">Educación</div>
+                <div class="info-title">FORMACIÓN</div>
                 <p>Lic. Administración de Empresas UNEA</p>
                 <p>Diplomado en Constructivismo de liderazgo y equipos de alto rendimiento UNIVA</p>
                 <p>Liderazgo TLANEMANI</p>
                 <p>Derechos Humanos CNDH (Cursando)</p>
             </div>
-            <div class="info-section">
+			<div class="info-section">
                 <div class="info-title">Proyecto Social</div>
                 <p>FEMME MARKET</p>
                 <p>Mujer Empírica</p>
@@ -5707,7 +5711,18 @@ function syncAttributes($sourceElement, $targetElement) {
                 <div class="info-title">Comisión</div>
                 <p>Presido comisión de Mujeres Empresarias Coparmex</p>
             </div>
+
+			<div class="info-section">
+					
+					<div class="contact-info">
+					<div class="info-title">CONTACTO</div>
+						<p>Tel: 440 413 9419</p>
+						<p>Email: contacto@innovaleph.com</p>
+					</div>
+			</div>
+            
         `;
+		/** */
 		}
 		document.getElementById('info-text').innerHTML = infoText;
 	}
