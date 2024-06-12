@@ -5691,7 +5691,7 @@ function syncAttributes($sourceElement, $targetElement) {
                 <div class="info-title">FORMACIÓN</div>
                 <p>Lic. Administración de Empresas UNEA</p>
                 <p>Diplomado en Constructivismo de liderazgo y equipos de alto rendimiento UNIVA</p>
-                <p>Liderazgo TLANEMANI</p>
+                <p>Diplomado Liderazgo TLANEMANI</p>
                 <p>Derechos Humanos CNDH (Cursando)</p>
             </div>
 			<div class="info-section">
@@ -5716,7 +5716,7 @@ function syncAttributes($sourceElement, $targetElement) {
 					
 					<div class="contact-info">
 					<div class="info-title">CONTACTO</div>
-						<p>Tel: 440 413 9419</p>
+						<p>Tel: 449 399 9017</p>
 						<p>Email: contacto@innovaleph.com</p>
 					</div>
 			</div>
