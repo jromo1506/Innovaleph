@@ -3630,7 +3630,7 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
 }
 
 .overlay_dark {
-  background-color: #181818;
+  /* background-color: #181818; */
   opacity: 0.8;
   mix-blend-mode: multiply;
 }
