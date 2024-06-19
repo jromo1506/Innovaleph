@@ -228,6 +228,10 @@ a:hover, a:focus {
   color: var(--color-accent-primary-4);
 }
 
+.logofootere{
+  height: 67px;
+}
+
 
 
 [data-header-animation=intransition] a {
