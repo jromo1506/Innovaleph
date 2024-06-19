@@ -221,7 +221,7 @@ img, iframe {
 
 a {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  color: var(--color-accent-primary-1);
+  color: #C3840F;
 }
 a:hover, a:focus {
   text-decoration: none;
@@ -230,6 +230,10 @@ a:hover, a:focus {
 
 .logofootere{
   height: 67px;
+}
+
+.menu-overlay>li>a:hover{
+  color: #C3840F !important;
 }
 
 
@@ -3904,10 +3908,6 @@ div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-#noocultar{
-  opacity: 1 !important;
-  visibility: visible !important;
-}
 
 
 
