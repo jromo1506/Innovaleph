@@ -8242,10 +8242,10 @@ cite:before {
 }
 
 
-.active-card {
+/* .active-card {
     background-color: #f0f0f0 !important; 
     border: 2px solid #007BFF !important; 
-}
+} */
 
 .card-container {
   display: flex;
