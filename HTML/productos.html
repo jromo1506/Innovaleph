@@ -147,8 +147,16 @@
                         <article class="post post-preview">
                           <h2>Titulo</h2>
                           <h6>Subtitulo</h6>
-                          <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum culpa earum voluptatem eos deserunt est consequuntur cupiditate repellat inventore odit omnis mollitia odio magnam magni beatae, repellendus voluptatum ratione dolorem iure ducimus aspernatur sint reprehenderit perspiciatis! Ea fugiat, assumenda dolorem provident mollitia at nobis tempora illo aliquam earum delectus? Architecto!</p>
-                          <div class="post-preview__media"><a><img src="img/imgs/casa1.jpg" alt=""/></a></div>
+                          <p style="text-align: justify;">Casa Celestún, ubicada en un entorno cautivador, trasciende su contexto inmediato con un diseño que combina elegancia y funcionalidad. La visión detrás de esta casa es la de un refugio atemporal: su diseño se inspira en la idea de que debe ser habitable desde la juventud hasta la vejez,  sobresale por sus jardines espectaculares creando recorridos sensoriales a través de la naturaleza. Es un refugio atemporal donde la naturaleza, comodidad y eternidad convergen.</p>
+                          <div class="post-preview__media"><a>
+                          <div class="flex-container">
+                              <div class="flex-item"></div>
+                              <div class="flex-item"></div>
+                              <div class="flex-item"></div>
+                          </div>
+                            <!-- <img src="img/imgs/casa1.jpg" alt=""/> -->
+                          </a>
+                          </div>
                           <!--<div class="post-preview__header">
                             <h4><a href="blog-post.html">Descripion del producto #1</a></h4>
                           </div>-->
@@ -175,59 +183,8 @@
 
                         </article>
                       </div>
-                      <div class="section-blog__wrapper-post">
-                        <article class="post post-preview">
-                          <h2>Titulo</h2>
-                          <h6>Subtitulo</h6>
-                          <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum culpa earum voluptatem eos deserunt est consequuntur cupiditate repellat inventore odit omnis mollitia odio magnam magni beatae, repellendus voluptatum ratione dolorem iure ducimus aspernatur sint reprehenderit perspiciatis! Ea fugiat, assumenda dolorem provident mollitia at nobis tempora illo aliquam earum delectus? Architecto!</p>
-                          <div class="post-preview__media"><a ><img src="img/imgs/casa2.jpg" alt=""/></a></div>
-                          <!--<div class="post-preview__header">
-                            <h4><a href="blog-post.html">Descripcion del producto #2</a></h4>
-                          </div>-->
-                          
-                          <div class="row">
-                            <div class="col-lg-4 post-preview__wrapper-meta">
-                              <!-- <div class="post-preview__meta post-preview__date"><a href="#">29 Jun 2019</a></div> -->
-                              <div class="post-preview__meta">
-                                <ul class="post-preview__categories">
-                                  <li><a>Innovaleph </a></li>
-                                </ul>
-                              </div>
-        
-                            </div>
-                            <!--<div class="col-lg-8 post-preview__wrapper-content">
-                               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et dicta numquam culpa nesciunt minus nobis labore. Temporibus corporis quaerat, officia dolorem facilis ea totam eaque! Repellendus facere quae minima suscipit.
-                                </p> 
-                            </div>-->
-                          </div>
-                        </article>
-                      </div>
-                      <div class="section-blog__wrapper-post">
-                        <article class="post post-preview">
-                          <h2>Titulo</h2>
-                          <h6>Subtitulo</h6>
-                          <p style="text-align: justify;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum culpa earum voluptatem eos deserunt est consequuntur cupiditate repellat inventore odit omnis mollitia odio magnam magni beatae, repellendus voluptatum ratione dolorem iure ducimus aspernatur sint reprehenderit perspiciatis! Ea fugiat, assumenda dolorem provident mollitia at nobis tempora illo aliquam earum delectus? Architecto!</p>
-                          <div class="post-preview__media"><a ><img src="img/imgs/casa3.jpg" alt=""/></a></div>
-                          <!--<div class="post-preview__header">
-                            <h4><a href="blog-post.html">Descripcion del producto #3</a></h4>
-                          </div>-->
-                          <div class="row">
-                            <div class="col-lg-4 post-preview__wrapper-meta">
-                              <!-- <div class="post-preview__meta post-preview__date"><a href="#">27 Enero 2024</a></div> -->
-                              <div class="post-preview__meta">
-                                <ul class="post-preview__categories">
-                                  <li><a >Innovaleph</a></li>
-                                </ul>
-                              </div>
-                            </div>
-                            <!--<div class="col-lg-8 post-preview__wrapper-content">
-                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores natus quaerat inventore, sit molestias eligendi laboriosam, exercitationem sed est harum expedita at excepturi eaque maiores sequi voluptatibus molestiae nisi blanditiis.
-                                </p> 
-                              <div class="post-preview__wrapper-readmore"><a class="button button_small button_accent-primary-3 button_solid" href="blog-post.html">Read More</a></div>
-                            </div>-->
-                          </div>
-                        </article>
-                      </div>
+                   
+                
                       
                     </div>
                     <!-- - posts -->
@@ -298,3 +255,28 @@
     <!-- - PAGE SCRIPTS-->
   </body>
 </html> 
+
+
+<style>
+ .flex-container {
+    display: flex;           /* Usar flexbox */
+    justify-content: space-between;  /* Distribuir elementos con espacio entre ellos */
+    align-items: stretch;    /* Estirar los elementos para que tengan la misma altura */
+    height: 20rem;           /* Altura completa de la ventana (opcional) */
+    margin: 0;
+    padding: 0;
+    gap: 0;                  /* Eliminar espacio entre los elementos */
+}
+
+/* Estilo para los elementos flex */
+.flex-item {
+    flex: 1;                 /* Cada elemento ocupa el mismo espacio */
+    background-color: #f0f0f0; /* Fondo para visualizar los elementos */
+    border: 1px solid #ccc;  /* Borde para visualizar los elementos */
+    padding: 20px;           /* Espaciado interno */
+    box-sizing: border-box;  /* Incluir el borde y el relleno en el ancho y la altura */
+    text-align: center;      /* Centrar el texto */
+    background-image: url('img/imgs/casa1.jpg');
+    background-size: cover;
+}
+</style>
