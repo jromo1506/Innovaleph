@@ -8290,6 +8290,28 @@ cite:before {
   margin-top: 10px;
 }
 
+.flex-container {
+  display: flex;           /* Usar flexbox */
+  justify-content: space-between;  /* Distribuir elementos con espacio entre ellos */
+  align-items: stretch;    /* Estirar los elementos para que tengan la misma altura */
+  height: 20rem;           /* Altura completa de la ventana (opcional) */
+  margin: 0;
+  padding: 0;
+  gap: 0;                  /* Eliminar espacio entre los elementos */
+}
+
+/* Estilo para los elementos flex */
+.flex-item {
+  flex: 1;                 /* Cada elemento ocupa el mismo espacio */
+  background-color: #f0f0f0; /* Fondo para visualizar los elementos */
+  border: 1px solid #ccc;  /* Borde para visualizar los elementos */
+  padding: 20px;           /* Espaciado interno */
+  box-sizing: border-box;  /* Incluir el borde y el relleno en el ancho y la altura */
+  text-align: center;      /* Centrar el texto */
+  background-image: url('../img/imgs/casa2.jpg');
+  background-size: cover;
+}
+
 .card button:hover {
   background-color: #0056b3;
 }
