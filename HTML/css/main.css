@@ -8312,6 +8312,22 @@ cite:before {
   background-size: cover;
 }
 
+@media (max-width: 600px) {
+
+  .flex-container {
+    display: block;           /* Usar flexbox */
+                /* Eliminar espacio entre los elementos */
+                height: auto;
+  }
+
+  .flex-item{
+    background-size: cover;
+    height: 20rem;
+  }
+
+
+}
+
 .f1{
   background-image: url('../img/imgs/CASA\ NN_01.jpg');
 }
