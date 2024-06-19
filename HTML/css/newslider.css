@@ -2,7 +2,6 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
 body { 
 	overflow: hidden;
 
@@ -12,6 +11,31 @@ body {
 	position: relative;
 	transition: 1s ease-out;
 	-webkit-transition: 1s ease-out;
+}
+
+.divfoot{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+}
+
+.divfoot>div{
+    width: 80%;
+}
+
+.linksfooter{
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+.linksfooter>h4>a{
+	color: #004A46;
+}
+
+.linksfooter>h4>a:hover{
+	color: #C3840F;
 }
 
 .panel { 
