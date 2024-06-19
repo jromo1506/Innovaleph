@@ -8308,8 +8308,36 @@ cite:before {
   padding: 20px;           /* Espaciado interno */
   box-sizing: border-box;  /* Incluir el borde y el relleno en el ancho y la altura */
   text-align: center;      /* Centrar el texto */
-  background-image: url('../img/imgs/casa2.jpg');
+  /* background-image: url('../img/imgs/casa2.jpg'); */
   background-size: cover;
+}
+
+.f1{
+  background-image: url('../img/imgs/CASA\ NN_01.jpg');
+}
+
+.f2{
+  background-image: url('../img/imgs/CASA\ NN_02.jpg');
+}
+
+.f3{
+  background-image: url('../img/imgs/CASA\ NN_03.jpg');
+}
+
+.f4{
+  background-image: url('../img/imgs/CASA\ NN_04.jpg');
+}
+
+.f5{
+  background-image: url('../img/imgs/casa1.jpg');
+}
+
+.f7{
+  background-image: url('../img/imgs/casa2.jpg');
+}
+
+.f6{
+  background-image: url('../img/imgs/casa3.jpg');
 }
 
 .card button:hover {
