@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+	overflow: hidden;
+
+}
+
+.containersli {
+	position: relative;
+	transition: 1s ease-out;
+	-webkit-transition: 1s ease-out;
+}
+
+.panel { 
+	height: 100vh;
+	width: 100%;
+	background: #f7f7f7;
+	position: relative;
+	text-align: center;
+}
+
+.panel>img{ 
+	height: 100%;
+	width: 100%;
+    object-fit: cover;
+}
