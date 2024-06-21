@@ -27,6 +27,7 @@ body {
 .linksfooter{
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 	
 }
 
@@ -36,6 +37,28 @@ body {
 
 .linksfooter>h4>a:hover{
 	color: #C3840F;
+}
+@media only screen and (max-width: 1000px) {
+	.linksfooter>h4{
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.divfoot{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+	/*headerpapu*/
+
+	.header__wrapper-overlay-widgets>div>div>div>p>a{
+		color: white;
+	}
+	
 }
 
 .panel { 
