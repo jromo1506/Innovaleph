@@ -211,6 +211,48 @@
 
 	}
 
+// const itens = document.querySelectorAll('.flex-item');
+    
+
+// function agrandaImg(){
+// 	items.forEach(function(item) {
+//         item.addEventListener('click', function() {
+//             // Añade la clase 'agranda-img' al div clicado
+//             item.classList.toggle('agranda-img');
+//         });
+//     });
+// }
+const items = document.querySelectorAll('.flex-item');
+const lup =document.querySelectorAll('.fa-magnifying-glass');
+        // Añadir un controlador de eventos de clic a cada elemento
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                // Si el elemento clicado ya tiene la clase .agranda-img
+                if (item.classList.contains('agranda-img')) {
+                    // Remover la clase .agranda-img del elemento clicado
+                    item.classList.remove('agranda-img');
+                    // Mostrar todos los elementos .flex-item
+                    items.forEach(otherItem => {
+                        otherItem.classList.remove('hidden');
+                    });
+                } else {
+                    // Si el elemento clicado no tiene la clase .agranda-img
+
+                    // Remover la clase .agranda-img de todos los elementos
+                    items.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('agranda-img');
+                            otherItem.classList.add('hidden');
+                        }
+                    });
+
+                    // Añadir la clase .agranda-img al elemento clicado
+                    item.classList.add('agranda-img');
+                    item.classList.remove('hidden');
+                }
+            });
+        });
+
 	/*!========================================================================
 		1. PJAX Animate Clonned Heading
 		======================================================================!*/

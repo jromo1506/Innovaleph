@@ -8313,6 +8313,10 @@ cite:before {
   gap: 0;                  /* Eliminar espacio entre los elementos */
 }
 
+.fa-magnifying-glass{
+  cursor: pointer;
+}
+
 /* Estilo para los elementos flex */
 .flex-item {
   flex: 1;                 /* Cada elemento ocupa el mismo espacio */
@@ -8323,7 +8327,24 @@ cite:before {
   text-align: center;      /* Centrar el texto */
   /* background-image: url('../img/imgs/casa2.jpg'); */
   background-size: cover;
+  transition: ease width height 0.3s ;
+  /* cursor: pointer; */
+  text-align: left;
 }
+
+.flex-item.hidden {
+  opacity: 0;
+  pointer-events: none; /* Para desactivar los eventos en los elementos ocultos */
+}
+
+/* .flex-item:hover{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+} */
+
+
 
 @media (max-width: 600px) {
 
@@ -8368,7 +8389,19 @@ cite:before {
 .f6{
   background-image: url('../img/imgs/casa3.jpg');
 }
-
+.agranda-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40rem;
+  height: 30rem;
+  transform: translate(-50%, -50%) scale(1.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
 .card button:hover {
   background-color: #0056b3;
 }
@@ -8428,3 +8461,8 @@ width: 100%;
 }
 
 
+.black-burger{
+  /* color:#222222 !important; */
+  background-color: #888888 !important;
+}
+/*----------------------------------------------------------------------------*/
