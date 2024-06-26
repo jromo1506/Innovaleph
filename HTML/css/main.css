@@ -8406,7 +8406,7 @@ cite:before {
   width: 40rem;
   height: 30rem;
   transform: translate(-50%, -50%) scale(1.2);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(0, 0, 0, 0);
