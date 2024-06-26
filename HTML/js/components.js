@@ -3218,6 +3218,11 @@ const lup =document.querySelectorAll('.fa-magnifying-glass');
 					slength = 0;
 				}
 				if (hold === false) {
+					console.log(slength)
+					if (slength< (-500)){
+						slength = -500;
+						return
+					}
 					hold = true;
 					pan.style.transform = 'translateY(' + slength + 'vh)';
 					setTimeout(function () {
