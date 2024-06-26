@@ -58,6 +58,9 @@ body {
 	.header__wrapper-overlay-widgets>div>div>div>p>a{
 		color: white;
 	}
+	.header__wrapper-overlay-widgets>div>div>div>p>a>div{
+		color: white;
+	}
 	
 }
 
@@ -73,4 +76,5 @@ body {
 	height: 100%;
 	width: 100%;
     object-fit: cover;
+	object-position: bottom center;
 }

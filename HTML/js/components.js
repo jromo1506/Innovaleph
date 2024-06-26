@@ -222,36 +222,7 @@
 //         });
 //     });
 // }
-const items = document.querySelectorAll('.flex-item');
-const lup =document.querySelectorAll('.fa-magnifying-glass');
-        // Añadir un controlador de eventos de clic a cada elemento
-        items.forEach(item => {
-            item.addEventListener('click', () => {
-                // Si el elemento clicado ya tiene la clase .agranda-img
-                if (item.classList.contains('agranda-img')) {
-                    // Remover la clase .agranda-img del elemento clicado
-                    item.classList.remove('agranda-img');
-                    // Mostrar todos los elementos .flex-item
-                    items.forEach(otherItem => {
-                        otherItem.classList.remove('hidden');
-                    });
-                } else {
-                    // Si el elemento clicado no tiene la clase .agranda-img
 
-                    // Remover la clase .agranda-img de todos los elementos
-                    items.forEach(otherItem => {
-                        if (otherItem !== item) {
-                            otherItem.classList.remove('agranda-img');
-                            otherItem.classList.add('hidden');
-                        }
-                    });
-
-                    // Añadir la clase .agranda-img al elemento clicado
-                    item.classList.add('agranda-img');
-                    item.classList.remove('hidden');
-                }
-            });
-        });
 
 	/*!========================================================================
 		1. PJAX Animate Clonned Heading
@@ -1092,6 +1063,8 @@ const lup =document.querySelectorAll('.fa-magnifying-glass');
 				head.insertBefore(newHeadTags[i], head.querySelector('link[rel="stylesheet"]'));
 
 			}
+
+			console.log(data)
 
 
 			if (data.next.url.path.includes('index.html')) {
@@ -3191,6 +3164,43 @@ const lup =document.querySelectorAll('.fa-magnifying-glass');
 
 		console.log("slider")
 
+		try{
+			const items = document.querySelectorAll('.flex-item');
+const lup =document.querySelectorAll('.fa-magnifying-glass');
+        // Añadir un controlador de eventos de clic a cada elemento
+        items.forEach(item => {
+            item.addEventListener('click', () => {
+                // Si el elemento clicado ya tiene la clase .agranda-img
+                if (item.classList.contains('agranda-img')) {
+                    // Remover la clase .agranda-img del elemento clicado
+                    item.classList.remove('agranda-img');
+                    // Mostrar todos los elementos .flex-item
+                    items.forEach(otherItem => {
+                        otherItem.classList.remove('hidden');
+                    });
+                } else {
+                    // Si el elemento clicado no tiene la clase .agranda-img
+
+                    // Remover la clase .agranda-img de todos los elementos
+                    items.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('agranda-img');
+                            otherItem.classList.add('hidden');
+                        }
+                    });
+
+                    // Añadir la clase .agranda-img al elemento clicado
+                    item.classList.add('agranda-img');
+                    item.classList.remove('hidden');
+                }
+            });
+        });
+		}catch (error) {
+
+		} finally {
+
+		}
+
 		try {
 
 
@@ -3218,7 +3228,6 @@ const lup =document.querySelectorAll('.fa-magnifying-glass');
 					slength = 0;
 				}
 				if (hold === false) {
-					console.log(slength)
 					if (slength< (-500)){
 						slength = -500;
 						return
@@ -3227,7 +3236,7 @@ const lup =document.querySelectorAll('.fa-magnifying-glass');
 					pan.style.transform = 'translateY(' + slength + 'vh)';
 					setTimeout(function () {
 						hold = false;
-					}, 1300);
+					}, 1400);
 				}
 			}
 
