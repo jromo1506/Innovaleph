@@ -8468,4 +8468,22 @@ width: 100%;
   /* color:#222222 !important; */
   background-color: #888888 !important;
 }
+
+@media only screen and (max-width: 1000px) {
+	
+	/*headerpapu*/
+
+	.header__wrapper-overlay-widgets>div>div>div>p>a{
+		color: white;
+    font-weight: bolder;
+	}
+	.header__wrapper-overlay-widgets>div>div>div>p>a>div{
+		color: white;
+    font-weight: bolder;
+	}
+	.social__item>a{
+    font-size: 20px;
+    color: white;
+  }
+}
 /*----------------------------------------------------------------------------*/
